@@ -1,4 +1,8 @@
 # Siembol UI
+
+## Introduction
+Siembol UI offers a modern angualar interface to edit stuff. 
+
 ## Authentication
 Two types of authentication are supported: disabled or oauth2. This can be configured in the `ui-config.json` file (more info [here](../services/how-tos/how_to_set_up_service_in_config_editor_rest.md)).
 ## Home page

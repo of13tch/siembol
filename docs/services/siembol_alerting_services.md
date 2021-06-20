@@ -1,4 +1,6 @@
 # Siembol Alerting Services
+## Introduction
+Siembol UI offers a modern angualar interface to edit stuff. 
 ## Overview
 Siembol alert is a detection engine used to filter matching events from an incoming data stream based on a configurable rule set. The correlation alert allows you to group several detections together before raising an alert.
 ## Alert service
@@ -13,6 +15,7 @@ The fields thar are common to alert and correlation alert.
   - `tag_value` - The value of the tag. 
 
 ```
+Another change introduced here!
 Note: if you want to correlate an alert in correlation engine that use the tag with name "correlation_key". This alert will be silent if you do not set the tag with name "correlation_alert_visible"
 ```
 - `rule_protection` - Rule Protection allows you to prevent a noisy alert from flooding the components downstream. You can set the maximum number of times an alert can fire per hour and per day. If either limit is exceeded then any event that matches is sent to error instead of output topic until the threshold is reset. Rule Protection is optional.  If it is not configured for a rule, the rule will get the global defaults applied.
