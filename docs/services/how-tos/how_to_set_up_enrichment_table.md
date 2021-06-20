@@ -8,6 +8,8 @@ An enrichment table is defined in a JSON file, it only supports mappings of `str
         }
 
 ## The structure of zookeeper update message
+This is a change.
+
 After updating an enrichment table it is necessary to inform the enrichment topology of the changes, this is done using Zookeeper. The Zookeeper node is configured in the admin config of enrichment ([see here](../siembol_enrichment_service.md)). This message is stored in a Zookeeper node in JSON format. In it the tables are in a list in the "hdfs_tables" key and each table has a name and the path to the latest table. Here is an example with two tables:
 
         {
